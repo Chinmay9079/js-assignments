@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script>
+			function max()
+			{
+				var a, b, c;
+				a = document.getElementById("one").value;
+				b = document.getElementById("two").value;
+				c = document.getElementById("three").value;
+
+				if(a>b && a>c)
+				{
+					window.alert(a+"-is the highest");
+				}
+				else if(a>b && a>b)
+				{
+					window.alert(b+"-is the highest");
+				}
+				else if(c>a && c>a)
+				{
+					window.alert(c+"is the highest");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Check the highest number</h1>
+		
+		
+		Enter number one: <input type="text" id="one"></input><br>
+		Enter number two: <input type="text" id="two"></input><br>
+		Enter number three: <input type="text" id="three"></input><br>
+		
+		<center><button onclick="max()">SUBMIT</button>
+	</body>
+</html>
